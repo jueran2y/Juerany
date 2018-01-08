@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/TextA"
+        android:text="A"
+        android:textSize="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/useBu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TextA"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/upNum"
+        android:text=""
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TextA" />
+    <TextView
+        android:id="@+id/useBu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upNum"
+        android:visibility="invisible"/>
+    <TextView
+        android:text=""
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useBu2"
+        android:id="@+id/downNum"
+        android:layout_toRightOf="@+id/TextA" />
+    <TextView
+        android:id="@+id/useBu3"
+        android:text=" = "
+        android:textSize="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/upNum" />
+    <TextView
+        android:id="@+id/result"
+        android:text="  "
+        android:textSize="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/useBu3"/>
+    <TextView
+        android:id="@+id/Text_error"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextA"/>
+
+<TableLayout
+android:stretchColumns="0,1,2,3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_alignParentStart="true">
+    <TableRow>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bu_up"
+            android:text="↑"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bu_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="↓"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="←"
+            android:textSize="30dp" />
+    </TableRow>
+<TableRow>
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/bu_A"
+        android:text="A"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/bu_C"
+        android:text="C"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</TableRow>
+<TableRow>
+    <Button
+
+        android:id="@+id/bu_1"
+        android:text="1"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bu_2"
+        android:text="2"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bu_3"
+        android:text="3"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</TableRow>
+<TableRow>
+    <Button
+        android:id="@+id/bu_4"
+        android:text="4"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bu_5"
+        android:text="5"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bu_6"
+        android:text="6"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</TableRow>
+<TableRow>
+    <Button
+        android:id="@+id/bu_7"
+        android:text="7"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bu_8"
+        android:text="8"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bu_9"
+        android:text="9"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</TableRow>
+<TableRow>
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/bu_clear"
+        android:text="清空"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bu_0"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bu_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="="
+        android:textSize="30dp" />
+</TableRow>
+</TableLayout>
+</RelativeLayout>
